@@ -1,0 +1,136 @@
+.Header {
+  position: sticky;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 5px 0;
+  background: black;
+  .content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .logo {
+      a {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #fff;
+        svg {
+          width: 30px;
+          height: 30px;
+        }
+      }
+    }
+    .search {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+      margin-left: 100px;
+      &HomeIcon {
+        border-radius: 50%;
+        border: none;
+        background: rgb(31, 31, 31);
+        padding: 5px;
+        svg {
+          width: 25px;
+          height: 25px;
+        }
+      }
+      &_inputBlock {
+        position: relative;
+        width: 380px;
+        display: flex;
+        align-items: center;
+        input {
+          border: none;
+          border-radius: 15px;
+          width: 100%;
+          padding: 10px 45px;
+          outline: none;
+          background: rgb(31, 31, 31);
+        }
+        &__btnLeft {
+          position: absolute;
+          left: 10px;
+          background: none;
+          border: none;
+          font-size: 25px;
+          top: 5px;
+          color: gray;
+        }
+        &__btnRight {
+          position: absolute;
+          right: 10px;
+          background: none;
+          border: none;
+          font-size: 25px;
+          top: 5px;
+          color: gray;
+          display: flex;
+          align-items: center;
+          gap: 5px;
+          .searchLine {
+            width: 1px;
+            height: 20px;
+            background: rgb(154, 150, 150);
+          }
+        }
+      }
+    }
+    .auth {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      position: relative;
+      img {
+        width: 35px;
+        border-radius: 50%;
+        border: 5px solid gray;
+        cursor: pointer;
+      }
+      button {
+        padding: 5px 10px;
+        border-radius: 15px;
+        border: none;
+        font-size: 10px;
+        font-weight: 900;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        background: black;
+        color: white;
+      }
+      button:hover {
+        background: white;
+        color: black;
+      }
+      .modalUser {
+        position: absolute;
+        right: 0;
+        top: 40px;
+        background: rgb(28, 28, 28);
+        padding: 5px;
+        h4 {
+          padding: 5px 0;
+          cursor: pointer;
+          font-size: 10px;
+          font-weight: 400;
+        }
+        h4:hover {
+          background: gray;
+        }
+        button {
+          padding: 5px 0;
+          cursor: pointer;
+          font-size: 10px;
+          font-weight: 400;
+          background: none;
+          border-radius: 0;
+        }
+        button:hover {
+          background: gray;
+        }
+      }
+    }
+  }
+}

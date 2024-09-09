@@ -1,0 +1,153 @@
+.PlayListContent {
+  .content {
+    border-radius: 15px 15px 0 0;
+    .playListContentHeader {
+      width: 100%;
+      padding: 20px;
+      display: flex;
+      align-items: end;
+      gap: 20px;
+      // background: rgb(84, 49, 171);
+      // background: linear-gradient(
+      //   180deg,
+      //   rgba(84, 49, 171, 1) 44%,
+      //   rgba(66, 66, 133, 0.9752275910364145) 65%
+      // );
+      border-radius: 10px 10px 0 0;
+
+      img {
+        width: 200px;
+        border-radius: 5px;
+      }
+      .playListContentHeaderTitle {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        p {
+          font-size: 10px;
+        }
+        h1 {
+          font-size: 55px;
+          font-weight: 900;
+        }
+        .playListContentHeaderTitleName {
+          display: flex;
+          align-items: center;
+          gap: 5px;
+        }
+      }
+    }
+    .playListHero {
+      // background: rgb(35, 26, 130);
+      // background: rgb(66, 66, 133);
+      // background: linear-gradient(
+      //   180deg,
+      //   rgba(66, 66, 133, 0.9752275910364145) 11%,
+      //   rgba(44, 44, 45, 1) 61%
+      // );
+
+      .playListHeroUp {
+        padding: 0 20px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        .playListHeroUpBox {
+          display: flex;
+          align-items: center;
+          gap: 10px;
+          button {
+            background: none;
+            border: none;
+          }
+          .playListHeroUpBoxBtn {
+            font-size: 45px;
+          }
+        }
+        .playListHeroUpBoxTwo {
+          display: flex;
+          align-items: center;
+          gap: 5px;
+          p {
+            font-size: 12px;
+            color: gray;
+          }
+          button {
+            background: none;
+            border: none;
+            margin: 5px 0 0 0;
+            font-size: 20px;
+          }
+        }
+      }
+      .playListHeroBlock {
+        padding: 0 20px;
+        .playListHeroBlockTitle {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          padding: 10px;
+          p {
+            font-size: 10px;
+            color: rgb(196, 188, 188);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            svg {
+              width: 15px;
+              height: 15px;
+            }
+          }
+          .playListHeroBlockTitleF {
+            display: flex;
+            gap: 10px;
+          }
+        }
+      }
+      .playListHeroBoxes {
+        padding: 10px 0;
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        .playListHeroBox {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          padding: 5px 0;
+          cursor: pointer;
+          padding: 5px 20px;
+          p {
+            font-size: 10px;
+            color: rgb(231, 228, 228);
+          }
+          .playListHeroBoxF {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            width: 585px;
+            .playListHeroBoxFBox {
+              display: flex;
+              align-items: center;
+              gap: 3px;
+              img {
+                width: 30px;
+                border-radius: 5px;
+              }
+            }
+          }
+          .name {
+            width: 550px;
+          }
+          .added_at {
+            width: 590px;
+          }
+        }
+        .playListHeroBox:hover {
+          background: rgb(47, 47, 47);
+        }
+        .active {
+          background: rgb(78, 76, 76);
+        }
+      }
+    }
+  }
+}

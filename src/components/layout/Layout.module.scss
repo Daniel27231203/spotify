@@ -1,0 +1,15 @@
+.LayoutSite {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 100vh;
+  .Home {
+    display: flex;
+    main {
+      width: 100%;
+    }
+  }
+  footer {
+    margin-top: auto;
+  }
+}
